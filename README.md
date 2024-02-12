@@ -40,5 +40,6 @@ Ensure that you have the Java Development Kit (JDK) and Git installed on your ma
 
 ### Clone the Repository
 
+Run this into your command prompt / Terminal and open the file from the specific directory
 ```bash
 git clone https://github.com/krsna016/singly-linked-list.git
