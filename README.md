@@ -1,4 +1,5 @@
 # Singly Linked List (SLL) Implementation in Java
+![Alt text](https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png)
 
 A comprehensive Java implementation of a Singly Linked List with various operations.
 
