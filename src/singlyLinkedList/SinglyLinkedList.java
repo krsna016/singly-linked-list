@@ -1,29 +1,19 @@
-package list;
+package singlyLinkedList;
 
 import node.Node;
-import adt.AbstractClass;
 
-public class SinglyLinkedList implements AbstractClass {
+public class SinglyLinkedList {
+    Node head;
+    int size = 0;
 
-    public Node head;
-    public int size;
-
-    public SinglyLinkedList() {
-        this.head = null;
-        this.size = 0;
-    }
-
-    @Override
     public boolean is_empty() {
         return size == 0;
     }
 
-    @Override
     public int get_size() {
         return size;
     }
 
-    @Override
     public void add_first(int data) {
         Node new_node = new Node(data);
         if (is_empty()) {
@@ -36,7 +26,6 @@ public class SinglyLinkedList implements AbstractClass {
         size++;
     }
 
-    @Override
     public void add_last(int data) {
         Node new_node = new Node(data);
         if (is_empty()) {
@@ -51,7 +40,6 @@ public class SinglyLinkedList implements AbstractClass {
         size++;
     }
 
-    @Override
     public void remove_first() {
         if (is_empty())
             return;
@@ -59,7 +47,6 @@ public class SinglyLinkedList implements AbstractClass {
         size--;
     }
 
-    @Override
     public void remove_last() {
         if (is_empty()) return;
         if (size == 1) {
@@ -76,7 +63,6 @@ public class SinglyLinkedList implements AbstractClass {
         size--;
     }
 
-    @Override
     public void print_element(Node head_) {
         Node current_node = head_;
         while (current_node != null) {
@@ -86,7 +72,6 @@ public class SinglyLinkedList implements AbstractClass {
         System.out.println("null");
     }
 
-    @Override
     public void add_any(int data, int position) {
         Node new_node = new Node(data);
         if (is_empty()) {
@@ -105,7 +90,6 @@ public class SinglyLinkedList implements AbstractClass {
         size++;
     }
 
-    @Override
     public void remove_any(int position) {
         if (is_empty())
             return;
@@ -123,7 +107,6 @@ public class SinglyLinkedList implements AbstractClass {
         size--;
     }
 
-    @Override
     public Node reverse(Node head_) {
         if(is_empty())
             return head;
@@ -140,7 +123,6 @@ public class SinglyLinkedList implements AbstractClass {
         return head;
     }
 
-    @Override
     public boolean search_node(int data) {
         Node current_node = head;
         while (current_node != null){
@@ -149,5 +131,15 @@ public class SinglyLinkedList implements AbstractClass {
             current_node = current_node.next;
         }
         return false;
+    }
+
+    static class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
     }
 }

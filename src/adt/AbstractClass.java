@@ -1,4 +1,7 @@
 package adt;
+
+import node.Node;
+
 public interface AbstractClass {
     boolean is_empty();
     int get_size();
@@ -6,8 +9,9 @@ public interface AbstractClass {
     void add_last(int data);
     void remove_first();
     void remove_last();
-    void print_element();
-    void add_any();
-    void remove_any();
-    void reverse();
+    void print_element(Node head);
+    void add_any(int data, int position);
+    void remove_any(int position);
+    Node reverse(Node head);
+    boolean search_node(int data);
 }

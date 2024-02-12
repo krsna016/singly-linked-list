@@ -1,9 +1,6 @@
-package main;
+package singlyLinkedList;
 
-import list.SinglyLinkedList;
-import node.Node;
-
-// Main method to implement the SinglyLinkedList class:
+import singlyLinkedList.SinglyLinkedList;
 public class Main {
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
