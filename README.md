@@ -41,4 +41,4 @@ Ensure that you have the Java Development Kit (JDK) and Git installed on your ma
 ### Clone the Repository
 
 ```bash
-git clone git@github.com:krsna016/singly-linked-list.git
+git clone https://github.com/krsna016/singly-linked-list.git
