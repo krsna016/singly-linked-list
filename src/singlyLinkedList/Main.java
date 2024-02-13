@@ -1,6 +1,7 @@
 package singlyLinkedList;
 
 import singlyLinkedList.SinglyLinkedList;
+
 public class Main {
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
@@ -26,7 +27,7 @@ public class Main {
         sll.remove_last();
         sll.print_element(sll.head);
 
-        sll.add_any(30,3);
+        sll.add_any(30, 3);
         sll.print_element(sll.head);
         sll.remove_any(2);
         sll.print_element(sll.head);

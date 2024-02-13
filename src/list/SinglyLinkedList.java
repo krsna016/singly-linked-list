@@ -125,12 +125,12 @@ public class SinglyLinkedList implements AbstractClass {
 
     @Override
     public Node reverse(Node head_) {
-        if(is_empty())
+        if (is_empty())
             return head;
         Node current_node = head_;
         Node previous_node = null;
         Node next_node = null;
-        while (current_node != null){
+        while (current_node != null) {
             next_node = current_node.next;
             current_node.next = previous_node;
             previous_node = current_node;
@@ -143,8 +143,8 @@ public class SinglyLinkedList implements AbstractClass {
     @Override
     public boolean search_node(int data) {
         Node current_node = head;
-        while (current_node != null){
-            if(current_node.data == data)
+        while (current_node != null) {
+            if (current_node.data == data)
                 return true;
             current_node = current_node.next;
         }
